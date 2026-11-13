@@ -1,0 +1,72 @@
+name: "🐛 Bug report"
+description: "Report a problem with Admin Shop Prices (no coding required)."
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve **Admin Shop Prices**! Please check if a similar issue already exists.
+        Download the current public version only from [KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora).
+        Do **not** share passwords, full personal paths or private save data.
+  - type: input
+    id: version
+    attributes:
+      label: "Admin Shop Prices version"
+      placeholder: "e.g. 1.1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: "Farming Simulator 25 version"
+      placeholder: "Version shown in the game"
+    validations:
+      required: true
+  - type: dropdown
+    id: play-mode
+    attributes:
+      label: "Play mode"
+      options:
+        - "Single-player"
+        - "Multiplayer (client)"
+        - "Multiplayer (host / dedicated server)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Explain what you did before the problem appeared."
+      placeholder: |
+        1. Open the Admin Shop Prices editor
+        2. Select ...
+        3. Change ...
+        4. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What did you expect to happen?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "What actually happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: others
+    attributes:
+      label: "Other mods and additional details (optional)"
+      description: "Please mention Economy Control and any other mods that might affect prices."
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Screenshots or relevant log excerpts (optional)"
+      description: "Attach screenshots or paste only relevant lines. Remove sensitive information first."
+    validations:
+      required: false
