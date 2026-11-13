@@ -84,9 +84,11 @@ Read the [changelog](CHANGELOG.md) or the [KingMods listing](https://www.kingmod
 
 **Admin Shop Prices is free. Donations are optional and do not unlock mods, features, updates or faster downloads.**
 
-If the mod is useful to you, the biggest ways to help right now are to leave constructive feedback, recommend it to other players, and follow future updates.
+If you enjoy the mod and want to support future updates, you can make a completely voluntary donation:
 
-*A voluntary donation link will appear here once the creator has set up and verified a payout page.*
+**[❤️ Support development on Donatello](https://donatello.to/MarkusVII)**
+
+You can also help by sharing the mod, reporting bugs, and leaving constructive feedback. Donations do not grant access to exclusive features, updates or downloads.
 
 ## 👤 Credits
 
