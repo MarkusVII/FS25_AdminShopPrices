@@ -2,7 +2,7 @@
 
 **Твої правила. Твої ціни. Твоя економіка у Farming Simulator 25.**
 
-**[⬇️ Завантажити на KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)** · **[English README](README.md)** · **[Повідомити про проблему](../../issues/new/choose)**
+**[⬇️ Завантажити на KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)** · **[English README](README.md)** · **[🐛 Повідомити про помилку](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=bug_report.yml)** · **[💡 Запропонувати ідею](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=feature_request.yml)**
 
 ## Що це за мод?
 
@@ -57,11 +57,13 @@
 
 Актуальна публічна версія на момент підготовки сторінки — **v1.1.0.0**. Завантажуй мод зі [сторінки KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora).
 
-Цей GitHub зараз є **сторінкою проєкту й місцем для повідомлень про помилки**, а не альтернативним джерелом архіву.
+**KingMods — єдине офіційне місце завантаження готового мода.** GitHub призначений для опису, скриншотів, повідомлень про помилки та ідей. Тут **немає вихідного коду, ZIP-файлів мода чи релізів GitHub**. Кнопка GitHub **Code → Download ZIP** завантажує лише файли цієї інформаційної сторінки, а не мод.
 
 ## Маєш ідею чи знайшов помилку?
 
-Створи [Issue](../../issues/new/choose) та вкажи версію гри й мода, спосіб відтворення помилки, інші встановлені економічні моди та відповідні рядки логу без приватних даних. Детальніше — у [SUPPORT.md](SUPPORT.md).
+Програмувати не потрібно! Можна **[🐛 повідомити про помилку](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=bug_report.yml)** або **[💡 запропонувати функцію](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=feature_request.yml)**. Для помилки вкажи версію гри й мода, кроки відтворення, інші економічні моди та відповідні рядки логу без приватних даних.
+
+GitHub не приймає внесків у вихідний код мода. Матеріали автора захищені; дивись [LICENSE.md](LICENSE.md). Це **не відкрита ліцензія на програмний код**. Детальніше — у [SUPPORT.md](SUPPORT.md).
 
 ## ❤️ Підтримка автора
 
