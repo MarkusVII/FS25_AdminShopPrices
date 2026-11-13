@@ -39,13 +39,35 @@
 
 These modes let you combine custom pricing with economic simulation or keep selected values independent.
 
-## 🖼️ Screenshots
+## 🖼️ In-game screenshots
 
-The official KingMods listing includes screenshots of the interface:
+Real screenshots from **Admin Shop Prices** running in Farming Simulator 25.
 
-**[View screenshots and the current public release on KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)**
+### 🚜 Vehicle price: editor → shop
 
-> Repository screenshots will be added from verified in-game captures. Until then, KingMods is the public visual preview.
+Set the Case IH Steiger base price to **$500,000** in the editor, then see the updated base price in the vehicle shop.
+
+| Edit the price | See the price in the FS25 shop |
+|:---:|:---:|
+| ![Editing Case IH Steiger price in Admin Shop Prices](assets/screenshots/01-vehicle-price-editor.webp) | ![Case IH Steiger base price of $500,000 in the FS25 shop](assets/screenshots/02-vehicle-price-in-shop.webp) |
+
+### 🗺️ Farmland: editor → map
+
+Set the price for **Plot 48** to **$100,000** and see that value on the farmland map.
+
+| Edit Plot 48 | Updated farmland map value |
+|:---:|:---:|
+| ![Editing Plot 48 price to $100,000](assets/screenshots/03-farmland-price-editor.webp) | ![Plot 48 costs $100,000 on the FS25 map](assets/screenshots/04-farmland-price-on-map.webp) |
+
+### 🏭 Services and production buildings
+
+The editor also covers **work and service costs** and **production buildings**, including buildings already placed on the map (indicated by *On map*).
+
+| Services and workers | Buildings and production |
+|:---:|:---:|
+| ![Services, workers and delivery prices](assets/screenshots/05-services-and-workers.webp) | ![Production building pricing, including an on-map Bakery](assets/screenshots/06-on-map-production-editor.webp) |
+
+For downloads and release details, visit **[KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)**.
 
 ## 📥 Download & installation
 
