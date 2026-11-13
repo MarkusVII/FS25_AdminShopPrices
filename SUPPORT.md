@@ -16,6 +16,8 @@
 
 ## Submit a report
 
-Use **[GitHub Issues](../../issues/new/choose)** and select *Bug report* or *Feature request*.
+Use **[🐛 Bug report](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=bug_report.yml)** or **[💡 Feature request](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=feature_request.yml)**. You don't need to know programming. The repository collects feedback and ideas only; source code is not available and pull requests are not requested.
+
+**Official ready-to-play download:** [KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora). GitHub is not an alternate download location.
 
 Do not publish confidential information or private save files without reviewing them first.
