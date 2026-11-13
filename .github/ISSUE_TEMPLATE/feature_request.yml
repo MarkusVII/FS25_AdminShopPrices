@@ -1,0 +1,37 @@
+name: "💡 Feature request"
+description: "Suggest a feature or improvement for Admin Shop Prices."
+title: "[IDEA] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! This repository collects **player feedback and suggestions**.
+        No coding or pull request is required. Suggestions may be reviewed for a future update, but cannot be guaranteed.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem or limitation does this address?"
+      placeholder: "For example, it is difficult to ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Your idea"
+      description: "Describe how you would like it to work in the game."
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "Who would benefit? (optional)"
+      placeholder: "Single-player, servers, specific categories, etc."
+    validations:
+      required: false
+  - type: textarea
+    id: examples
+    attributes:
+      label: "Examples or screenshots (optional)"
+      description: "Describe any similar game feature or attach a screenshot."
+    validations:
+      required: false
