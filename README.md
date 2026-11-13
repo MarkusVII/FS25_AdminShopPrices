@@ -11,7 +11,7 @@
 ![Access](https://img.shields.io/badge/Access-Free-brightgreen?style=flat-square)
 ![Status](https://img.shields.io/badge/Download-KingMods-orange?style=flat-square)
 
-**[⬇️ Download on KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)** · **[🇺🇦 Українською](README.uk.md)** · **[🐛 Report a bug](../../issues/new/choose)**
+**[⬇️ Download on KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora)** · **[🇺🇦 Українською](README.uk.md)** · **[🐛 Report a bug](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=bug_report.yml)** · **[💡 Suggest an idea](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=feature_request.yml)**
 
 </div>
 
@@ -76,7 +76,7 @@ For downloads and release details, visit **[KingMods](https://www.kingmods.net/r
 3. Enable the mod in your save game and launch the game.
 4. Locate its controls in the game's controls/settings menu if needed.
 
-> **Important:** This repository is currently a **project hub and support page**, not an alternative download mirror. Use the public KingMods link above. An official ModHub download is not claimed here.
+> **Official downloads: KingMods only.** This repository is for information, screenshots, bug reports and feature suggestions. **No source code, mod ZIPs or GitHub Releases are distributed here.** The GitHub **Code → Download ZIP** option downloads this page's documentation, **not the playable mod**. An official GIANTS ModHub download is not claimed here.
 
 ## 🤝 Compatibility & multiplayer
 
@@ -87,14 +87,16 @@ For downloads and release details, visit **[KingMods](https://www.kingmods.net/r
 
 ## 🐛 Feedback and bug reports
 
-Found a bug or want to suggest an improvement? Please use [GitHub Issues](../../issues/new/choose) and include:
+Want to help improve the mod? **No coding needed.** Use **[🐛 Report a bug](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=bug_report.yml)** or **[💡 Suggest a feature](https://github.com/MarkusVII/FS25_AdminShopPrices/issues/new?template=feature_request.yml)**. For bug reports, include:
 
 - Admin Shop Prices version, game version, and whether you play single-player or multiplayer;
 - Exact steps to reproduce the issue and the result you expected;
 - Whether Economy Control or other economy-related mods are installed;
 - Relevant log lines, **with personal or sensitive information removed**.
 
-See **[Support & troubleshooting](SUPPORT.md)** for guidance.
+See **[Support & troubleshooting](SUPPORT.md)** for guidance. This repository does not accept code contributions or publish the mod's source files.
+
+**Project rights:** Original project materials are all rights reserved; see [LICENSE.md](LICENSE.md). No open-source software license is granted.
 
 ## 🗓️ Latest public changes
 
