@@ -11,7 +11,7 @@
 ## Important notes / Важливі примітки
 
 - **Economy Control is optional / Economy Control необов'язковий.**
-- **Multiplayer changes depend on server permissions / У мультиплеєрі зміни залежать від прав на сервері.**
+- **Multiplayer changes are designed to depend on server permissions / Для мультиплеєра передбачено серверний контроль прав.** Remote-client and dedicated-server gameplay have not yet been verified in a real session / Реальні клієнтські сесії та Dedicated Server ще не підтверджені ігровими тестами.
 - **Third-party price operations are not universally supported / Не всі цінові операції сторонніх модів підтримуються.**
 
 ## Submit a report
