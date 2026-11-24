@@ -1,15 +1,43 @@
-# Copyright and usage notice
+# Admin Shop Prices — Mod for Farming Simulator
 
-Copyright © 2026 **MarkusVII**. All rights reserved for the author's original material.
+Copyright © 2026 MarkusVII. All rights reserved for the author's original material.
 
-This repository is a **public project information and feedback page**, not an open-source code distribution. It does not grant permission to copy, sell, redistribute, or reuse the author's original mod files, screenshots, text, or other original content beyond permissions required by applicable law or explicitly granted by the rights holder.
+## Permitted use
 
-The official **Admin Shop Prices** download is available through [KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora). No mod ZIP archives, executable builds, or source code are distributed from this repository.
+The mod may be downloaded free of charge from authorized distribution channels, installed and played in Farming Simulator 25, including ordinary single-player and multiplayer gameplay. Players may make copies necessary for installation and backups, view the source where available, and share links to authorized download pages.
 
-Farming Simulator, GIANTS Software, in-game visuals, third-party brand names, and other third-party material remain the property of their respective rights holders. This notice does **not** claim ownership of those third-party materials and does not supersede applicable game or platform terms.
+## Contributions and GitHub forks
 
-Players are welcome to submit bug reports and feature suggestions through GitHub Issues. Such reports are feedback, **not a grant of permission to redistribute or modify the mod**.
+Once the source code is publicly available, contributors may fork this repository on GitHub, modify their forks, test their changes in Farming Simulator 25, and submit patches and pull requests to the official repository:
 
-For permissions beyond normal viewing, please contact the project maintainer before reusing author-created material.
+https://github.com/MarkusVII/FS25_AdminShopPrices
 
-> This is a copyright notice, **not an OSI-approved open-source software license**.
+This permission is granted for contributing to Admin Shop Prices. Contributors may share patches through the official repository's Issues and Pull Requests. It does not grant permission to publish independent playable releases, distribute modified mod archives, maintain a separately distributed derivative mod, or reuse the author's protected material in other projects.
+
+Contributors retain rights to their original contributions. By submitting a contribution for inclusion, they grant MarkusVII a non-exclusive, worldwide, royalty-free license to use, modify, reproduce and distribute that contribution as part of Admin Shop Prices, including through ModHub and other authorized channels. Submit only material you have the right to license. Acceptance and inclusion of contributions are at the maintainer's discretion.
+
+GitHub's own Terms of Service and applicable law remain unaffected. In particular, this license does not technically prevent GitHub users from creating public forks.
+
+## Restrictions
+
+Except where permitted by applicable law, binding platform terms or express written permission from the relevant rights holder, no permission is granted to:
+
+- Copy or incorporate the author's original code, assets or other protected material into another mod, game or project.
+- Publish, reupload or redistribute the mod or modified versions, in whole or in part, through unauthorized distribution channels.
+- Distribute derivative works based on the author's protected material.
+- Sell, sublicense or otherwise commercially distribute the mod or its protected components.
+- Remove copyright or attribution notices or claim authorship of the author's work.
+
+Public availability of the source code or game-ready archive does not make this project open source. This notice does not restrict independent development, lawful interoperability, or rights that cannot be excluded by law.
+
+## Third-party and platform rights
+
+This notice applies only to material for which MarkusVII holds the relevant rights. Farming Simulator, GIANTS Software, third-party brands, data and other third-party material remain subject to their respective rights and applicable terms. Nothing in this notice restricts rights granted to GIANTS Software under its applicable terms or rights granted to users under GitHub's Terms of Service, including viewing and forking public repositories through GitHub.
+
+## Distribution status
+
+The mod is available free of charge through authorized distribution channels, including [KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora). Additional authorized download links may be announced by the maintainer. This repository currently provides documentation and feedback; no playable ZIP or source code is distributed here.
+
+This is a proprietary usage license and copyright notice, not an OSI-approved open-source license.
+
+For permission requests, contact MarkusVII through the project's GitHub Issues.
