@@ -2,6 +2,8 @@
 
 # 🛒 Admin Shop Prices
 
+**[🌐 Official Website & Documentation](https://markusvii.github.io/FS25_AdminShopPrices/)**
+
 ### Your rules. Your prices. Your Farming Simulator 25 economy.
 
 **In-game price management — Mod for Farming Simulator 25**
