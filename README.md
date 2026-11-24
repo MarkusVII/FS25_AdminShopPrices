@@ -4,7 +4,7 @@
 
 ### Your rules. Your prices. Your Farming Simulator 25 economy.
 
-**In-game price management for Farming Simulator 25**
+**In-game price management — Mod for Farming Simulator 25**
 
 ![Farming Simulator 25](https://img.shields.io/badge/Game-Farming%20Simulator%2025-5b7f37?style=flat-square)
 ![Version](https://img.shields.io/badge/KingMods-v1.1.0.0-blue?style=flat-square)
@@ -29,6 +29,8 @@
 | 🔄 Reset and presets | Restore original values or use presets for manual adjustments |
 | ⚖️ Separate buy/sell operations | Adjust supported buying and selling prices independently where the game exposes them |
 | 🔗 Follow Sale | Link eligible buying prices to selling prices in supported operations |
+| ⛽ Resource purchases | Adjust supported fuel, material and storage refill prices |
+| 🏭 Farmland & productions | Adjust supported farmland and production building prices |
 | 💱 Currency display | Select a display currency without replacing the game's internal payment system |
 | 🌍 Economy Control integration | Optional integration; Admin Shop Prices also works independently |
 
@@ -41,7 +43,7 @@ These modes let you combine custom pricing with economic simulation or keep sele
 
 ## 🖼️ In-game screenshots
 
-Real screenshots from **Admin Shop Prices** running in Farming Simulator 25.
+Real screenshots from **Admin Shop Prices** running in Farming Simulator 25. These examples illustrate the pricing workflow; the interface may differ slightly in later builds.
 
 ### 🚜 Vehicle price: editor → shop
 
@@ -82,7 +84,7 @@ For downloads and release details, visit **[KingMods](https://www.kingmods.net/r
 
 - **Economy Control is optional.** Admin Shop Prices works without it.
 - When both mods are installed, compatible price behavior can combine historical economic changes with manual adjustments.
-- Multiplayer price changes depend on server permissions.
+- Multiplayer price changes are designed to depend on server permissions. Remote-client and dedicated-server compatibility has not yet been verified in a real multiplayer session.
 - Some third-party mods implement their own pricing/payment systems; compatibility with those operations is not guaranteed.
 
 ## 🐛 Feedback and bug reports
@@ -116,7 +118,7 @@ You can also help by sharing the mod, reporting bugs, and leaving constructive f
 
 ## 👤 Credits
 
-**Created by MarksuVII** — author as listed on [KingMods](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora).
+**Created by MarkusVII** — [KingMods mod page](https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora).
 
 Farming Simulator and its trademarks belong to their respective owners. This is an independent community mod project.
 
