@@ -139,65 +139,46 @@ h1,h2{font-weight:720;letter-spacing:-.045em;line-height:1.05;font-size:clamp(36
 @media(max-width:900px){#demo .hover-thumbs{grid-template-rows:repeat(6,54px)}#demo .hover-thumbs .thumb-label{font-size:13px;padding:5px 11px}}
 @media(prefers-reduced-motion:reduce){.wipe.go,.stage.reverse .wipe.go{visibility:hidden;animation:none}.js .scene.entering,.js .stage.reverse .scene.entering{visibility:visible;animation:none}.js .scene.entering .copy,.js .scene.entering .shot-area{animation:none}}
 
-/* Studio V9 — natural graphite / ivory, true background-adaptive edge blending. */
-:root{--bg:#191b1c;--surface:#27292a;--ink:#f4f1eb;--muted:#bdbcb5;--accent:#d9c6ab;--green:var(--accent);--body-copy:#dedbd4;--line:rgba(244,241,235,.13);--button-ink:#1b1c1d}
-body{background:var(--bg);color:var(--ink)}
-.header,.controls,.foot{background:rgba(25,27,28,.88);border-color:var(--line)}
-.brand span,.eyebrow,.nav button[aria-current],.nav button:hover,.nav button:last-child,.category-list button span:first-child,.category-list button span:last-child,.steps li:before,.dialog-close{color:var(--accent)}
-.nav button{color:var(--muted)}.nav button:last-child:not([aria-current]):not(:hover){color:var(--ink)}
-.nav button:after{background:var(--accent)}
-.scene{background:var(--bg)}
-.scene:before{opacity:1;filter:saturate(.88)}
-.scene:after{background:linear-gradient(90deg,rgba(19,21,22,.94) 0%,rgba(19,21,22,.83) 30%,rgba(19,21,22,.40) 72%,rgba(19,21,22,.28) 100%),linear-gradient(0deg,rgba(19,21,22,.62),transparent 42%)}
-#home:after{background:linear-gradient(90deg,rgba(19,21,22,.93),rgba(19,21,22,.55) 40%,rgba(19,21,22,.07) 82%),linear-gradient(0deg,rgba(19,21,22,.66),transparent 43%)}
-#demo:after{background:linear-gradient(90deg,rgba(19,21,22,.92),rgba(19,21,22,.55) 42%,rgba(19,21,22,.46) 78%,rgba(19,21,22,.72)),linear-gradient(0deg,rgba(19,21,22,.66),transparent 48%)}
-#support:after{background:radial-gradient(ellipse at 50% 30%,rgba(19,21,22,.56),rgba(19,21,22,.91) 83%)}
-.lead,.steps li,dialog p{color:var(--body-copy)}
-.meta,.small-note,.shot-caption,.category-hint,.controls .hint,.foot,.counter{color:var(--muted)}
-h1 span,h2 span{color:var(--accent)}
-.cta,.donate{background:var(--accent);color:var(--button-ink)}
-.cta:hover{background:#f0e2ce}
-.donate:before{background:#f3e6d4}
-.donate{box-shadow:0 12px 48px rgba(0,0,0,.23)}
-.category-list button{border-bottom-color:var(--line)}
-dialog{background:var(--surface);color:var(--ink)}
-dialog::backdrop{background:rgba(15,16,17,.84)}
-.stage{--panel:#27292a;--panel-edge:#d9c6ab}
-.stage[data-motion="linen"]{--panel:#e3ddcf;--panel-edge:#77716a}
-#demo{--editorial-ink:var(--ink);--editorial-muted:var(--muted);--editorial-accent:var(--accent)}
-#demo .actions .link{border-bottom-color:var(--line)}
-#demo .rail-shell,#demo .hover-thumbs{background:transparent}
-#demo .rail-heading,#demo .rail-footer{opacity:1}
+
+/* Studio V10 — restore V8 site palette; match transition to the site, not the reverse. */
+.stage{--panel:var(--bg);--panel-edge:var(--green)}
+.stage[data-motion="linen"]{--panel:#c9ee83;--panel-edge:#111c15}
+.stage[data-motion="duo"]{--panel:#111c15;--panel-edge:#c9ee83}
+.stage[data-motion="duo"] .wipe{background:linear-gradient(90deg,#111c15 0%,#111c15 76%,#263d2b 76%,#263d2b 90%,#c9ee83 90%,#c9ee83 100%)}
+/* Keep the V8 typography and neutral gallery accents. No opaque tile backgrounds. */
+#demo .rail-shell,#demo .hover-thumbs,#demo .hover-thumbs button{background:transparent}
+#demo .hover-thumbs button{overflow:visible;isolation:isolate;border:0;box-shadow:none!important}
 #demo .hover-thumbs{gap:5px;padding:0}
-#demo .hover-thumbs button{background:transparent;overflow:visible;isolation:isolate;border:0;box-shadow:none!important}
-/* The image and the local contrast scrim fade to zero alpha, not to a fixed colour.
-   The actual scene underneath supplies the colour at every edge. */
 #demo .hover-thumbs button img,#demo .hover-thumbs button::before{
-  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 13%,#000 87%,transparent 100%),linear-gradient(0deg,transparent 0%,#000 18%,#000 82%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 13%,#000 87%,transparent),linear-gradient(0deg,transparent,#000 19%,#000 81%,transparent);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(90deg,transparent 0%,#000 13%,#000 87%,transparent 100%),linear-gradient(0deg,transparent 0%,#000 18%,#000 82%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent,#000 13%,#000 87%,transparent),linear-gradient(0deg,transparent,#000 19%,#000 81%,transparent);
   mask-composite:intersect;
 }
-#demo .hover-thumbs button img{transform:none;filter:blur(.55px) brightness(.96) saturate(.96);opacity:.86}
-#demo .hover-thumbs button::before{background:linear-gradient(90deg,rgba(17,18,19,.79) 0%,rgba(17,18,19,.45) 49%,transparent 90%);opacity:.95}
-#demo .hover-thumbs .thumb-label{height:auto;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto;align-items:center;align-content:center;gap:7px;padding:7px 11px;text-shadow:0 1px 4px #000,0 0 12px #0009}
-#demo .hover-thumbs .thumb-label small{grid-column:1;grid-row:1;color:var(--accent);font-size:9px}
-#demo .hover-thumbs .thumb-label>span:nth-child(2){grid-column:2;grid-row:1}
-#demo .hover-thumbs .thumb-arrow{grid-column:3;grid-row:1;color:var(--accent)}
-#demo .hover-thumbs button::after{inset:auto 15% 2px 15%;width:auto;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:center}
-#demo .hover-thumbs button[aria-pressed=true] img,#demo .hover-thumbs button:hover img{transform:none;filter:blur(0) brightness(1.05) saturate(1);opacity:1}
-#demo .hover-thumbs button[aria-pressed=true]::before,#demo .hover-thumbs button:hover::before{opacity:.9}
-#demo .hover-thumbs button:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+#demo .hover-thumbs button img{transform:none;filter:blur(1.65px) brightness(.95) saturate(.96);opacity:.9}
+#demo .hover-thumbs button::before{background:linear-gradient(0deg,rgba(12,16,13,.78),rgba(12,16,13,.34) 52%,transparent);opacity:.96}
+#demo .hover-thumbs button[aria-pressed=true] img,#demo .hover-thumbs button:hover img{transform:none;filter:blur(.65px) brightness(1.03) saturate(1);opacity:1}
+#demo .hover-thumbs button[aria-pressed=true]::before,#demo .hover-thumbs button:hover::before{opacity:.86}
+#demo .hover-thumbs button::after{inset:auto 15% 2px 15%;width:auto;height:1px;transform-origin:center}
+#demo .hover-thumbs .thumb-label{padding-bottom:8px;text-shadow:0 1px 5px #000c,0 0 10px #000a}
+#demo #gallery{background:transparent;overflow:visible}
 #demo #gallery .gallery-base,#demo #gallery .gallery-flight img{
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 1.8%,#000 98.2%,transparent),linear-gradient(0deg,transparent,#000 2.5%,#000 97.5%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 3.5%,#000 96.5%,transparent),linear-gradient(0deg,transparent,#000 4.5%,#000 95.5%,transparent);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(90deg,transparent,#000 1.8%,#000 98.2%,transparent),linear-gradient(0deg,transparent,#000 2.5%,#000 97.5%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 3.5%,#000 96.5%,transparent),linear-gradient(0deg,transparent,#000 4.5%,#000 95.5%,transparent);
   mask-composite:intersect;
 }
-#demo #gallery{background:transparent}
-#demo .demo-image-note span:last-child{color:var(--ink)}
-@media(max-width:900px){#demo .hover-thumbs .thumb-label{padding:5px 10px;font-size:13px}}
-@media(min-width:901px) and (max-height:670px){#demo .hover-thumbs .thumb-label{padding:3px 7px;font-size:11px;gap:5px}}
+#demo #gallery::before,#demo #gallery .gallery-flight::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:var(--edge-photo);background-size:contain;background-repeat:no-repeat;background-position:center;filter:blur(8px);opacity:.7;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(0deg,transparent,#000 9%,#000 91%,transparent);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(0deg,transparent,#000 9%,#000 91%,transparent);
+  mask-composite:intersect;
+}
+#demo #gallery::before{--edge-photo:url("assets/screenshots/01-vehicle-price-editor.webp");background-image:var(--base-edge-photo,var(--edge-photo))}
+#demo #gallery .gallery-base,#demo #gallery .gallery-flight img{position:relative;z-index:1}
+#demo #gallery .gallery-flight{overflow:hidden}
+#demo #gallery .gallery-flight::before{background-image:var(--flight-edge-photo,none)}
+@media(min-width:901px) and (max-height:670px){#demo .hover-thumbs .thumb-label{padding:3px 8px 5px}}
 </style></head><body><header class="header"><a class="brand" href="clean.html">Markus<span>VII</span></a><nav class="nav" aria-label="Розділи"><button data-go="0">Огляд</button><button data-go="1">Демонстрація</button><button data-go="2">Можливості</button><button data-go="3">Завантаження</button><button data-go="4">♥ Донат</button></nav></header><main class="stage">
 <section class="scene active" id="home"><div class="copy"><span class="eyebrow">01 / Огляд · Farming Simulator 25 · ПК / Mac</span><p class="product">Admin Shop Prices</p><h1>Твоя ферма.<span>Твої ціни.</span></h1><p class="lead">Керуй підтримуваними цінами техніки, продукції, землі та послуг безпосередньо у грі.</p><div class="actions"><button class="cta" data-go="1">Побачити в дії →</button><button class="link" data-go="3">Завантажити мод →</button></div><p class="meta">Версія 1.1.0.0 · Безкоштовний мод</p></div></section>
 <section class="scene" id="demo"><div class="copy demo-copy"><span class="eyebrow">02 / Демонстрація</span><div class="demo-description"><span class="demo-index" id="shot-count">Кадр 01 із 06</span><h2 id="shot-title">Редактор ціни техніки</h2><p class="lead" id="shot-copy">У редакторі можна задати базову ціну техніки.</p></div><div class="actions"><button class="link" id="prev-shot" aria-label="Попередній кадр">←</button><button class="link" id="next-shot" aria-label="Наступний кадр">→</button></div></div><div class="shot-area"><div class="demo-visual"><button class="shot" type="button" aria-label="Збільшити поточний кадр" aria-describedby="shot-title" id="gallery"><img class="gallery-base" src="assets/screenshots/01-vehicle-price-editor.webp" alt="Редактор ціни техніки"><span class="gallery-flight" aria-hidden="true"><img alt=""></span></button><div class="demo-image-note"><span>ІГРОВИЙ ІНТЕРФЕЙС · FS25</span><span>⤢ Повний розмір</span></div></div><div class="rail-shell"><div class="rail-heading"><span>ОБЕРИ ТЕМУ</span><span>01—06</span></div><div class="shot-tabs hover-thumbs" aria-label="Шість тем демонстрації"><button type="button" data-shot="0" aria-pressed="true"><img src="assets/screenshots/01-vehicle-price-editor.webp" alt="" width="320" height="180"><span class="thumb-label"><small>01</small><span>Редактор техніки</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button><button type="button" data-shot="1" aria-pressed="false"><img src="assets/screenshots/02-vehicle-price-in-shop.webp" alt="" width="320" height="180"><span class="thumb-label"><small>02</small><span>Ціни в магазині</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button><button type="button" data-shot="2" aria-pressed="false"><img src="assets/screenshots/03-farmland-price-editor.webp" alt="" width="320" height="180"><span class="thumb-label"><small>03</small><span>Редактор землі</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button><button type="button" data-shot="3" aria-pressed="false"><img src="assets/screenshots/04-farmland-price-on-map.webp" alt="" width="320" height="180"><span class="thumb-label"><small>04</small><span>Земельні ділянки</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button><button type="button" data-shot="4" aria-pressed="false"><img src="assets/screenshots/05-services-and-workers.webp" alt="" width="320" height="180"><span class="thumb-label"><small>05</small><span>Послуги й працівники</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button><button type="button" data-shot="5" aria-pressed="false"><img src="assets/screenshots/06-on-map-production-editor.webp" alt="" width="320" height="180"><span class="thumb-label"><small>06</small><span>Виробництва</span><span class="thumb-arrow" aria-hidden="true">↗</span></span></button></div><p class="rail-footer">Наведи курсор або обери тему</p></div></div></section>
@@ -205,7 +186,7 @@ dialog::backdrop{background:rgba(15,16,17,.84)}
 <section class="scene" id="download"><div class="copy"><span class="eyebrow">04 / Завантаження</span><h2>Керуй<span>своїми цінами.</span></h2><p class="lead">Завантаж Admin Shop Prices для Farming Simulator 25.</p><div class="actions"><a class="cta" href="https://www.kingmods.net/ru/fs25/mods/84435/tseny-magazina-administratora">KingMods ↗</a><a class="link" href="https://github.com/MarkusVII/FS25_AdminShopPrices/blob/main/README.uk.md">Документація ↗</a></div></div><div><ol class="steps"><li>Завантаж актуальний ZIP із KingMods.</li><li>Помісти архів у папку mods, не розпаковуючи.</li><li>Увімкни мод у збереженні.</li></ol><p class="small-note">Сумісність із виділеним сервером та віддаленим клієнтом ще не підтверджена в реальній багатокористувацькій грі.</p><a class="link" href="https://github.com/MarkusVII/FS25_AdminShopPrices/issues">Повідомити про помилку ↗</a></div></section>
 <section class="scene" id="support"><div class="copy support-copy"><span class="eyebrow">05 / Донат · MarkusVII</span><h2>Підтримай<span>майбутнє.</span></h2><p class="lead">Мої моди безкоштовні. Твоя добровільна підтримка допомагає розвивати наявні проєкти та створювати нові.</p><a class="donate" href="https://donatello.to/MarkusVII"><span>♥</span> ПІДТРИМАТИ РОЗРОБКУ <span>↗</span></a><p class="meta">Donatello · Добровільна підтримка</p></div></section><div class="wipe" aria-hidden="true"></div></main><div class="controls"><span class="hint">Коліщатко · Стрілки · Вкладки</span><span class="counter" aria-live="polite">01 / 05</span><button id="prev" aria-label="Попередній розділ">←</button><button id="next" aria-label="Наступний розділ">→</button></div><footer class="foot">Експериментальна версія · <a href="uk.html">Офіційна сторінка мода</a> · Ігрові кадри © GIANTS Software: <a href="https://www.farming-simulator.com/newsArticle.php?news_id=550">Riverbend Springs</a> · <a href="https://fs25.net/riverbend-springs-map-a-new-era-in-farming-simulation-gameplay-trailer/">Трейлер ігрового процесу</a></footer><dialog id="detail" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">Admin Shop Prices</span><form method="dialog"><button class="dialog-close">Закрити ×</button></form></div><h3 id="detail-title">Деталі</h3><p></p><img alt="" hidden></dialog>
 <script>
-(()=>{const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>Array.from(r.querySelectorAll(q));const scenes=$$('.scene'),nav=$$('.nav button'),stage=$('.stage'),wipe=$('.wipe'),dialog=$('#detail'),reduce=matchMedia('(prefers-reduced-motion: reduce)');const files=['01-vehicle-price-editor.webp','02-vehicle-price-in-shop.webp','03-farmland-price-editor.webp','04-farmland-price-on-map.webp','05-services-and-workers.webp','06-on-map-production-editor.webp'].map(x=>'assets/screenshots/'+x),names=['Редактор ціни техніки','Магазин техніки','Редактор ціни землі','Карта земельних ділянок','Послуги та працівники','Виробництва на карті'],copies=['У редакторі можна задати базову ціну техніки.','У магазині відображається встановлена ціна техніки.','У редакторі можна змінити підтримувану ціну ділянки.','На карті видно оновлену ціну земельної ділянки.','Налаштовуй підтримувані витрати на послуги та працівників.','Редагуй підтримувані ціни виробництв, зокрема вже розміщених на карті.'],details=[['Техніка та обладнання','Змінюй підтримувані ціни техніки й обладнання.',0],['Сільгосппродукція','Налаштовуй підтримувані ціни купівлі та продажу.',-1],['Ресурси','Керуй цінами пального, матеріалів і поповнення запасів.',-1],['Земля','Встановлюй підтримувані ціни земельних ділянок.',2],['Будівлі та виробництва','Редагуй підтримувані ціни виробництв, включно з розміщеними на карті.',5],['Послуги та працівники','Налаштовуй підтримувані витрати на працівників і послуги.',4]];let current=0,shot=0,timer=0,shotTimer=0,wheelAt=0,wheelSum=0,lastGo=0,hover=null;document.documentElement.classList.add('js');const motion=new URLSearchParams(location.search).get('motion');stage.dataset.motion=['linen','duo','graphite'].includes(motion)?motion:'graphite';const railGallery=$('#gallery'),flight=$('.gallery-flight'),flightImg=$('img',flight),base=$('.gallery-base',railGallery),railButtons=$$('[data-shot]'),description=$('.demo-description');let animation=null,outAnimation=null,copyAnimation=null,serial=0,shown=0;
+(()=>{const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>Array.from(r.querySelectorAll(q));const scenes=$$('.scene'),nav=$$('.nav button'),stage=$('.stage'),wipe=$('.wipe'),dialog=$('#detail'),reduce=matchMedia('(prefers-reduced-motion: reduce)');const files=['01-vehicle-price-editor.webp','02-vehicle-price-in-shop.webp','03-farmland-price-editor.webp','04-farmland-price-on-map.webp','05-services-and-workers.webp','06-on-map-production-editor.webp'].map(x=>'assets/screenshots/'+x),names=['Редактор ціни техніки','Магазин техніки','Редактор ціни землі','Карта земельних ділянок','Послуги та працівники','Виробництва на карті'],copies=['У редакторі можна задати базову ціну техніки.','У магазині відображається встановлена ціна техніки.','У редакторі можна змінити підтримувану ціну ділянки.','На карті видно оновлену ціну земельної ділянки.','Налаштовуй підтримувані витрати на послуги та працівників.','Редагуй підтримувані ціни виробництв, зокрема вже розміщених на карті.'],details=[['Техніка та обладнання','Змінюй підтримувані ціни техніки й обладнання.',0],['Сільгосппродукція','Налаштовуй підтримувані ціни купівлі та продажу.',-1],['Ресурси','Керуй цінами пального, матеріалів і поповнення запасів.',-1],['Земля','Встановлюй підтримувані ціни земельних ділянок.',2],['Будівлі та виробництва','Редагуй підтримувані ціни виробництв, включно з розміщеними на карті.',5],['Послуги та працівники','Налаштовуй підтримувані витрати на працівників і послуги.',4]];let current=0,shot=0,timer=0,shotTimer=0,wheelAt=0,wheelSum=0,lastGo=0,hover=null;document.documentElement.classList.add('js');const motion=new URLSearchParams(location.search).get('motion');stage.dataset.motion=['linen','duo','graphite'].includes(motion)?motion:'graphite';const railGallery=$('#gallery'),flight=$('.gallery-flight'),flightImg=$('img',flight),base=$('.gallery-base',railGallery),railButtons=$$('[data-shot]'),description=$('.demo-description');let animation=null,outAnimation=null,copyAnimation=null,serial=0,shown=0;function syncEdge(){railGallery.style.setProperty('--base-edge-photo','url("'+base.getAttribute('src')+'")');flight.style.setProperty('--flight-edge-photo',flightImg.getAttribute('src')?'url("'+flightImg.getAttribute('src')+'")':'none')}const edgeObserver=new MutationObserver(syncEdge);edgeObserver.observe(base,{attributes:true,attributeFilter:['src']});edgeObserver.observe(flightImg,{attributes:true,attributeFilter:['src']});syncEdge();
 function caption(i){$('#shot-title').textContent=names[i];$('#shot-count').textContent='Кадр '+String(i+1).padStart(2,'0')+' із 06';$('#shot-copy').textContent=copies[i];railButtons.forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.shot)===i)))}
 function stopFlight(){serial++;if(animation){animation.cancel();animation=null}if(outAnimation){outAnimation.cancel();outAnimation=null}if(copyAnimation){copyAnimation.cancel();copyAnimation=null}base.src=files[shown];base.alt=names[shown];railGallery.classList.remove('is-flight','is-settled','is-returning')}
 function hidePreview(){stopFlight()}
