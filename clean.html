@@ -193,6 +193,57 @@ h1,h2{font-weight:720;letter-spacing:-.045em;line-height:1.05;font-size:clamp(36
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 @media(min-width:901px) and (max-height:670px){#demo .hover-thumbs .thumb-label{font-size:clamp(15px,1.5vw,22px)}#demo .hover-thumbs button[data-shot="5"] .thumb-label{font-size:clamp(14px,1.4vw,20px)}#demo .demo-description{min-height:0;margin-top:12px}}
 @media(max-width:900px){#demo .hover-thumbs .thumb-label,#demo .hover-thumbs button[data-shot="5"] .thumb-label{font-size:20px}#demo .demo-description{min-height:0;margin-top:12px}}
+
+/* Studio V12 — original ASP design tokens, natural image contrast and restrained depth. */
+:root{--bg:#101411;--ink:#f4f6ed;--muted:#a9b3a6;--green:#b7f34b;--line:#344038;--panel:#19231c;--ease:cubic-bezier(.22,1,.36,1)}
+body{background:var(--bg);color:var(--ink)}
+.header,.controls,.foot{background:rgba(16,20,17,.9);border-color:#ffffff12}
+.nav button{font-weight:650}
+.nav button[aria-current]{color:var(--ink)}
+.nav button:last-child{color:var(--green)}
+h1,h2{font-weight:800;letter-spacing:-.055em}
+.eyebrow{font-weight:800;letter-spacing:.15em}
+.lead{color:#d7dfd3}
+.meta,.small-note,.category-hint{color:var(--muted)}
+.scene{background:var(--bg)}
+.scene:before{opacity:1;filter:none}
+.scene:after{background:linear-gradient(90deg,rgba(16,20,17,.92) 0%,rgba(16,20,17,.76) 25%,rgba(16,20,17,.32) 60%,rgba(16,20,17,.09) 100%),linear-gradient(0deg,rgba(16,20,17,.58),transparent 36%)}
+#home:after{background:linear-gradient(90deg,rgba(16,20,17,.94) 0%,rgba(16,20,17,.73) 30%,rgba(16,20,17,.12) 67%,transparent 100%),linear-gradient(0deg,rgba(16,20,17,.53),transparent 34%)}
+#demo:after{background:linear-gradient(90deg,rgba(16,20,17,.93) 0%,rgba(16,20,17,.67) 27%,rgba(16,20,17,.36) 56%,rgba(16,20,17,.58) 100%),linear-gradient(0deg,rgba(16,20,17,.42),transparent 32%)}
+#support:after{background:radial-gradient(ellipse at 50% 35%,rgba(16,20,17,.49),rgba(16,20,17,.86) 83%)}
+.cta,.donate{color:#10170b;background:var(--green)}
+.cta:hover{background:#d7ff92}
+.donate:before{background:#e5ffb3}
+.category-list button{border-bottom-color:rgba(244,246,237,.13)}
+dialog{background:var(--panel)}
+.stage{--panel:var(--bg);--panel-edge:var(--green)}
+.stage[data-motion="linen"]{--panel:var(--green);--panel-edge:var(--bg)}
+.stage[data-motion="duo"]{--panel:var(--bg);--panel-edge:var(--green)}
+.stage[data-motion="duo"] .wipe{background:linear-gradient(90deg,#101411 0%,#101411 76%,#263b24 76%,#263b24 90%,#b7f34b 90%,#b7f34b 100%)}
+#demo{--editorial-ink:var(--ink);--editorial-muted:#c6cec1;--editorial-accent:#dac6a0}
+#demo #shot-title{font-weight:800;letter-spacing:-.05em}
+#demo .hover-thumbs button img{filter:blur(1.25px);opacity:1}
+#demo .hover-thumbs button[aria-pressed=true] img,#demo .hover-thumbs button:hover img{filter:blur(.5px);opacity:1}
+#demo .hover-thumbs button::before{background:radial-gradient(ellipse at center,rgba(10,14,11,.51),rgba(10,14,11,.15) 58%,transparent 100%)}
+#demo .hover-thumbs .thumb-label{font-weight:800;color:#f4f6ed}
+#demo .hover-thumbs button[aria-pressed=true]::after,#demo .hover-thumbs button:hover::after{background:var(--green)}
+#demo #gallery .gallery-base,#demo #gallery .gallery-flight img{
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 2.1%,#000 97.9%,transparent),linear-gradient(0deg,transparent,#000 2.8%,#000 97.2%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 2.1%,#000 97.9%,transparent),linear-gradient(0deg,transparent,#000 2.8%,#000 97.2%,transparent);
+  filter:none;opacity:1;
+}
+#demo #gallery::before,#demo #gallery .gallery-flight::before{filter:blur(7px);opacity:.78}
+#demo .demo-visual{position:relative;isolation:isolate}
+#demo .demo-visual::before{content:"";position:absolute;inset:-7% -6% 4%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(91,135,60,.15),transparent 69%);filter:blur(18px)}
+#demo #gallery{filter:drop-shadow(0 12px 24px rgba(0,0,0,.26))}
+#features .shot{filter:drop-shadow(0 20px 38px rgba(0,0,0,.37))}
+@media(min-width:901px) and (hover:hover) and (prefers-reduced-motion:no-preference){
+ #demo .demo-visual{perspective:1500px}
+ #demo #gallery{transform:rotateY(-1.3deg);transform-origin:center;transition:transform .6s var(--ease)}
+ #demo #gallery:hover,#demo #gallery.is-flight{transform:none}
+ #features .shot{transform:perspective(1500px) rotateY(-2.5deg);transition:transform .6s var(--ease)}
+ #features .shot:hover{transform:none}
+}
 </style></head><body><header class="header"><a class="brand" href="clean.html">Markus<span>VII</span></a><nav class="nav" aria-label="Розділи"><button data-go="0">Огляд</button><button data-go="1">Мод у дії</button><button data-go="2">Можливості</button><button data-go="3">Завантаження</button><button data-go="4">♥ Підтримати</button></nav></header><main class="stage">
 <section class="scene active" id="home"><div class="copy"><span class="eyebrow">Farming Simulator 25</span><p class="product">Admin Shop Prices</p><h1>Твоя ферма.<span>Твої ціни.</span></h1><p class="lead">Налаштовуй економіку своєї ферми: змінюй ціни техніки, продукції, землі та послуг безпосередньо у грі.</p><div class="actions"><button class="cta" data-go="1">Побачити в дії →</button><button class="link" data-go="3">Завантажити мод →</button></div><p class="meta">Безкоштовно · ПК та Mac · Версія 1.1.0.0</p></div></section>
 <section class="scene" id="demo"><div class="copy demo-copy"><span class="eyebrow">Мод у дії</span><div class="demo-description"><h2 id="shot-title">Ціни техніки</h2><p class="lead" id="shot-copy">Змінюй вартість техніки та обладнання безпосередньо у грі. Налаштовуй ціни відповідно до економіки свого господарства.</p></div><div class="actions"><button class="link" id="prev-shot" aria-label="Попередній скриншот">←</button><button class="link" id="next-shot" aria-label="Наступний скриншот">→</button></div></div><div class="shot-area"><div class="demo-visual"><button class="shot" type="button" aria-label="Відкрити скриншот у повному розмірі" aria-describedby="shot-title" id="gallery"><img class="gallery-base" src="assets/screenshots/01-vehicle-price-editor.webp" alt="Редактор ціни техніки"><span class="gallery-flight" aria-hidden="true"><img alt=""></span></button><div class="demo-image-note"><span>⤢ Переглянути у повному розмірі</span></div></div><div class="rail-shell"><div class="shot-tabs hover-thumbs" aria-label="Шість тем демонстрації"><button type="button" data-shot="0" aria-pressed="true"><img src="assets/screenshots/01-vehicle-price-editor.webp" alt="" width="320" height="180"><span class="thumb-label">Техніка</span></button><button type="button" data-shot="1" aria-pressed="false"><img src="assets/screenshots/02-vehicle-price-in-shop.webp" alt="" width="320" height="180"><span class="thumb-label">Магазин</span></button><button type="button" data-shot="2" aria-pressed="false"><img src="assets/screenshots/03-farmland-price-editor.webp" alt="" width="320" height="180"><span class="thumb-label">Земля</span></button><button type="button" data-shot="3" aria-pressed="false"><img src="assets/screenshots/04-farmland-price-on-map.webp" alt="" width="320" height="180"><span class="thumb-label">Карта</span></button><button type="button" data-shot="4" aria-pressed="false"><img src="assets/screenshots/05-services-and-workers.webp" alt="" width="320" height="180"><span class="thumb-label">Послуги</span></button><button type="button" data-shot="5" aria-pressed="false"><img src="assets/screenshots/06-on-map-production-editor.webp" alt="" width="320" height="180"><span class="thumb-label">Виробництва</span></button></div></div></div></section>
